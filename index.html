@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Permanent+Marker&display=swap');
+        </style>
+</head>
+<body>
+
+<nav>
+    <div class="left">
+        <img src="Assets/logo.png" alt="Logo">
+    </div>
+    <div class="right">
+            <a href="https://github.com/aneesmohammed18"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohammedanees18/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</nav>
+
+    <div class="gamecontainer">
+
+     <h1>TIC TAC TOE</h1>
+
+<div class="cells">
+<button class="cell" data-index="0"></button>
+<button class="cell" data-index="1"></button>
+<button class="cell" data-index="2"></button>
+<button class="cell" data-index="3"></button>
+<button class="cell" data-index="4"></button>
+<button class="cell" data-index="5"></button>
+<button class="cell" data-index="6"></button>
+<button class="cell" data-index="7"></button>
+<button class="cell" data-index="8"></button>
+
+</div>
+
+<div class="status">
+    <h1 id="turnstatus">
+    </h1>
+</div>
+        <button onclick="reset()"  id="reset">reset</button>
+ </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

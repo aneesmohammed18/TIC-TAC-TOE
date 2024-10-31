@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+ background-color:#608BC1;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+nav i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: black;
+    transition: all ease-in-out 0.1s;
+}
+
+nav i:hover {
+    transform: scale(1.3);
+    color: #EC4186;
+}
+
+.left img {
+    margin-left: 10px;
+}
+
+.gamecontainer {
+    margin-top: 80px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 88.9vh;
+}
+
+.gamecontainer h1 {
+    font-size: 2em;
+    margin-top: 10px;
+    font-weight: 800;
+    color: #FFFFFF;
+    
+}
+
+.cells {
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    margin-top: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.cell {
+    height: 120px;
+    width: 120px;
+    background-color: #133E87;
+    color: #FFFFFF;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: "Permanent Marker";
+    outline: none;
+    border: white 1px solid;
+}
+.status{
+    text-align: center;
+}
+#turnstatus{
+     font-size: 50px;
+     font-weight: 700;
+}
+
+#reset {
+    height: 40px;
+    width: 170px;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+}
+#reset:hover{
+    background-color: white;
+    color: #000;
+    border: none;
+}
+
+
+/* resposniveness */
+
+@media(max-width:500px){
+
+    nav img{
+height: fit-content;
+width: fit-content;
+margin-right: 10px;
+    }
+    nav i{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+}
